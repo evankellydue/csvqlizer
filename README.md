@@ -20,6 +20,7 @@ dbeaver's autocomplete is very good if you have created a table with columns lik
 `   column_one varchar,`
 
 `   column_two varchar`
+
 `)`
 
 and doesn't guess well if create a table like this:
