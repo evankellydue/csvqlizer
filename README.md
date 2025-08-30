@@ -1,5 +1,7 @@
 # CSVQLIZER
 
+**Disclaimer: I am on the week 4 problem set of Harvard's CS50 course 2025 and realized I could create this useful thing for myself.
+
 This is a very rough project that aims to accomplish a common work task:
 
 Given a CSV export from a random records management system, how can I rename the columns to be dbeaver sql-autocomplete compatible and create a table to import to where the data type is varchar?
