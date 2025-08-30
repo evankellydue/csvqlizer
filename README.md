@@ -6,7 +6,7 @@ Given a CSV export from a random records management system, how can I rename the
 
 #### Why varchar?
 
-I find editing/transforming/analyzing CSVs to be easier in postgres then in excel, because I can write whatever logic I want. I also prefer having empty values = null (as opposed to making everything text)
+I find editing/transforming/analyzing CSVs to be easier in postgres than in excel, because I can write whatever logic I want. I also prefer having empty values as null (as opposed to making everything text)
 It is a lot easier for me to treat everything as a string and do operations like `split_part`, `concat_ws`, and `ilike '%text%'` and transform the data into a new CSV for loading into an existing script I have with appropriate data types.
 
 #### What do you mean by dbeaver sql-autocomplete compatible?
@@ -14,17 +14,24 @@ It is a lot easier for me to treat everything as a string and do operations like
 dbeaver's autocomplete is very good if you have created a table with columns like:
 
 `create table deployment.example`
+
 `(`
+
 `   column_one varchar,`
+
 `   column_two varchar`
 `)`
 
 and doesn't guess well if create a table like this:
 
 `create table deployment.bad_example`
+
 `(`
+
 `   "column one" varchar,`
+
 `   "column two" varchar`
+
 `)`
 
 #### What does this currently do?
