@@ -1,6 +1,6 @@
 # CSVQLIZER
 
-**Disclaimer: I am on the week 4 problem set of Harvard's CS50 course 2025 and realized I could create this useful thing for myself.
+**Disclaimer: I am on the week 4 problem set of Harvard's CS50 course 2025 and realized I could create this useful thing for myself.**
 
 This is a very rough project that aims to accomplish a common work task:
 
