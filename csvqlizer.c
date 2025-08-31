@@ -106,6 +106,10 @@ int main(int argc, char* argv[])
     printf(" varchar\n");
     // Create a new file with the new first CSV row
     // Print the SQL deployment table with every column as a varchar
+    // Free everything
+    free(csv_buffer);
+    free(first_row);
+    free(fixed_first_row);
     // Close the the file when you are done
     fclose(csv);
 }
