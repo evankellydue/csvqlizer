@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -91,6 +92,13 @@ int main(int argc, char* argv[])
             fixed_first_row_bytes++;
         }
     }
+    // Print out the new first row to replace in the csv
+    for (int i = 0; i < fixed_first_row_bytes; i++)
+    {
+        printf("%c", fixed_first_row[i]);
+    }
+    // Print a newline to separate column list and varchar columns
+    printf("\n");
     // Print out the new deployment table varchar columns
     for (int i = 0; i < fixed_first_row_bytes; i++)
     {
